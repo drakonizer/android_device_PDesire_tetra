@@ -1,4 +1,5 @@
-# Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2017 The Android Open Source Project
+# Copyright (C) 2017 Tristan Marsell
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +23,6 @@
 # Release name
 PRODUCT_RELEASE_NAME := tetra
 
-$(call inherit-product, device/google/clockwork/build/wearable-mdpi-512-dalvik-heap.mk)
 $(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
 
 # Inherit device configuration
@@ -32,6 +32,6 @@ $(call inherit-product, device/PDesire/tetra/device.mk)
 PRODUCT_DEVICE := tetra
 PRODUCT_NAME := tetra
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := SmartWatch 3 (Android Wear 2.0)
+PRODUCT_MODEL := SmartWatch 3
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_CHARACTERISTICS := nosdcard,watch
