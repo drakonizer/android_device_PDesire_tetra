@@ -1,4 +1,4 @@
-android_device_PDesire_tetra
+android_device_sony_tetra
 =========================
 
 Android Wear device tree for Sony Smartwatch 3 (SWR50).

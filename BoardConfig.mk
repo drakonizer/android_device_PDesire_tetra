@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/PDesire/tetra
+LOCAL_PATH := device/sony/tetra
 
 USE_CAMERA_STUB := true
 
@@ -52,10 +52,10 @@ TARGET_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS -DEGL_NEEDS_FNW -DJAVA_HWC
 TARGET_GLOBAL_CFLAGS += -DADD_LEGACY_ACQUIRE_BUFFER_SYMBOL
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/PDesire/tetra/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/tetra/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUEDROID_VENDOR_CONF := device/PDesire/tetra/bluetooth/vnd_generic.txt
+BOARD_BLUEDROID_VENDOR_CONF := device/sony/tetra/bluetooth/vnd_generic.txt
 
 # Wi-Fi definitions for Broadcom solution
 BOARD_WLAN_DEVICE           := bcmdhd
@@ -77,7 +77,7 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 BOARD_KERNEL_CMDLINE := "androidboot.selinux=permissive enforcing=0"
 BOARD_KERNEL_BASE := 0x85000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_SOURCE := kernel/tetra
+TARGET_KERNEL_SOURCE := kernel/sony/tetra
 TARGET_KERNEL_CONFIG := tetra_defconfig
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
@@ -99,7 +99,7 @@ BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
 WITH_DEXPREOPT := false
 
 # GPS
-TARGET_SPECIFIC_HEADER_PATH := device/PDesire/tetra/include
+TARGET_SPECIFIC_HEADER_PATH := device/sony/tetra/include
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -113,7 +113,7 @@ TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
 BOARD_SEPOLICY_DIRS += build/target/board/generic/sepolicy
-BOARD_SEPOLICY_DIRS += device/PDesire/tetra/sepolicy
+BOARD_SEPOLICY_DIRS += device/sony/tetra/sepolicy
 
 # Resolution
 DEVICE_RESOLUTION := 320x320
