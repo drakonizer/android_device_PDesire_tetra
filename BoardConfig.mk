@@ -74,7 +74,7 @@ BUILD_KERNEL := true
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
-BOARD_KERNEL_CMDLINE := "androidboot.selinux=permissive enforcing=0"
+BOARD_KERNEL_CMDLINE := androidboot.selinux=disabled enforcing=0
 BOARD_KERNEL_BASE := 0x85000000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_KERNEL_SOURCE := kernel/sony/tetra
